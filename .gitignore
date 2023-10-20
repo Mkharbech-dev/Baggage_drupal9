@@ -68,12 +68,9 @@ yarn-error.log
 # Backups.
 backups/*
 
-
-
-
 # Drupal paranoia.
 /www
-
+/.idea
 # Cloned repositories.
 /contrib
 
