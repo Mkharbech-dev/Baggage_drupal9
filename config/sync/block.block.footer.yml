@@ -1,0 +1,25 @@
+uuid: f9261eea-ada7-46c3-ab49-d3b1b6579683
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d9f54fbc-46a5-4b96-97ec-06db556ccfbd'
+  module:
+    - block_content
+  theme:
+    - baggage
+id: footer
+theme: baggage
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d9f54fbc-46a5-4b96-97ec-06db556ccfbd'
+settings:
+  id: 'block_content:d9f54fbc-46a5-4b96-97ec-06db556ccfbd'
+  label: 'footer section'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

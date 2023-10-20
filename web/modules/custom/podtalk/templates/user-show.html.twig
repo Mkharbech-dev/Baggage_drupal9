@@ -1,0 +1,23 @@
+
+  <h3 class="py-3">{{ title }}</h3>
+  <table class="table table-dark table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Identifiant</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Email</th>
+      <th scope="col">Date création</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in data %}
+      <tr>
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.mail }}</td>
+        <td>{{ item.created }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+

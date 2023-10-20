@@ -1,0 +1,42 @@
+<?php
+
+/**
+ *
+ * Implements hook_schema().
+ *
+ */
+
+function podtalk_schema() {
+  $schema['customform'] = [
+    'fields' => [
+        'id' => [
+        'description' => 'id utilisateur',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        ],
+        'mail' => [
+          'description' => 'email utilisateur',
+          'type' => 'varchar',
+          'length' => 64,
+          'not null' => FALSE,
+          'default' => '',
+        ],
+        'name' => [
+          'description' => 'nom utilisateur',
+          'type' => 'varchar',
+          'length' => 64,
+          'not null' => TRUE,
+          'default' => '',
+        ],
+        'created' => [
+          'type' => 'int',
+          'not null' => TRUE,
+          'default' => 0,
+          'description' => 'date de creation',
+        ],
+    ],
+     'primary key' => ['id'],
+  ];
+    return $schema;
+}

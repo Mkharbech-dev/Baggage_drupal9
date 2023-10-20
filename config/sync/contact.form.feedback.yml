@@ -1,0 +1,14 @@
+uuid: 491d08e7-19aa-4928-89b2-047d244d3e91
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - SALAH_ITA@YAHOO.FR
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé.'
+redirect: ''

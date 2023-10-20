@@ -1,0 +1,23 @@
+uuid: c482d20b-bd70-40e1-93ce-516690c6ed9a
+langcode: fr
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - baggage
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: baggage_search_form_wide
+theme: baggage
+region: highlighted
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche (large)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

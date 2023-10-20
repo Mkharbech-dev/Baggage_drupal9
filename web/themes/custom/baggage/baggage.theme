@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+
+/**
+Si on n'a pas attaché la libraire dans .info.yml, on le fait ici dand le fichier twig
+*/
+/**
+function baggage_preprocess_page(&$variables) {
+    $variables['#attached']['library'][] = 'baggage/global-styling';
+}
+*/

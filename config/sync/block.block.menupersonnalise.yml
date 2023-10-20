@@ -1,0 +1,25 @@
+uuid: 82d11c72-15bd-4161-bb6d-5c00a41043c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.menu-personnalise
+  module:
+    - system
+  theme:
+    - baggage
+id: menupersonnalise
+theme: baggage
+region: navigation
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-personnalise'
+settings:
+  id: 'system_menu_block:menu-personnalise'
+  label: 'menu personnalisé'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

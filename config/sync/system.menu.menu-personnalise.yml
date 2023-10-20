@@ -1,0 +1,8 @@
+uuid: 0e526230-3bb8-42df-849d-469512eb387d
+langcode: fr
+status: true
+dependencies: {  }
+id: menu-personnalise
+label: 'menu personnalisé'
+description: 'menu personnalisé pour baggage'
+locked: false

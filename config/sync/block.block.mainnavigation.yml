@@ -1,0 +1,25 @@
+uuid: 4f88b2e6-41a2-4010-afa5-274216ec800d
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - baggage
+id: mainnavigation
+theme: baggage
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

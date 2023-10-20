@@ -1,0 +1,23 @@
+uuid: e4ab52f3-8720-4e39-bece-4928aa24bf1e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.prduit
+  module:
+    - text
+id: node.prduit.body
+field_name: body
+entity_type: node
+bundle: prduit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

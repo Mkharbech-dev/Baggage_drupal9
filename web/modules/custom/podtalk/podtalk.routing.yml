@@ -1,0 +1,36 @@
+podtalk.recetteList:
+  path: '/listerecettes'
+  defaults:
+    _controller: '\Drupal\podtalk\Controller\recetteController::recetteList'
+    _title: 'les meilleures recettes du Maroc'
+  requirements:
+    _permission: 'access content'
+
+
+podtalk.bienvenue:
+  path: '/bienvenue'
+  defaults:
+    _controller: '\Drupal\podtalk\Controller\salahController::bienvenue'
+    _title: 'bienvenue dans le monde des recettes du Maroc'
+  requirements:
+    _permission: 'access content'
+
+podtalk.bonjour:
+  path: '/bonjour/{param}'
+  defaults:
+    _controller: '\Drupal\podtalk\Controller\salahController::bonjour'
+    param: null
+    _title: 'bienvenue dans le monde de bonjour'
+  requirements:
+    _permission: 'access content'
+    para: '[a-zA-Z]+'
+
+podtalk.service:
+  path: '/ajouter/utilisateur'
+  defaults:
+    _form: '\Drupal\podtalk\Form\AddUserForm'
+    _title: 'Ajouter un utilisateur'
+  requirements:
+    _permission: 'access content'
+
+

@@ -1,0 +1,8 @@
+services:
+  podtalk.formation:
+    class: \Drupal\podtalk\Service\FormationService
+    arguments: ['@database']
+
+  podtalk.db_insert_service:
+    class: \Drupal\podtalk\Service\DbInsertService
+    arguments: [ '@database' ]

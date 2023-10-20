@@ -1,0 +1,18 @@
+uuid: 55cec5f7-4d97-4306-9ce1-9ed91994e8e9
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - baggage
+id: pagetitle
+theme: baggage
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

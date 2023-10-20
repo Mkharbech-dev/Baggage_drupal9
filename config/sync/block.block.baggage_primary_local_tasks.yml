@@ -1,0 +1,22 @@
+uuid: a020f6be-1c61-4fcf-920b-d9724329acec
+langcode: fr
+status: false
+dependencies:
+  theme:
+    - baggage
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: baggage_primary_local_tasks
+theme: baggage
+region: highlighted
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Onglets principaux'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,154 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a pager.
+ *
+ * Available variables:
+ * - items: List of pager items.
+ *   The list is keyed by the following elements:
+ *   - first: Item for the first page; not present on the first page of results.
+ *   - previous: Item for the previous page; not present on the first page
+ *     of results.
+ *   - next: Item for the next page; not present on the last page of results.
+ *   - last: Item for the last page; not present on the last page of results.
+ *   - pages: List of pages, keyed by page number.
+ *   Sub-sub elements:
+ *   items.first, items.previous, items.next, items.last, and each item inside
+ *   items.pages contain the following elements:
+ *   - href: URL with appropriate query parameters for the item.
+ *   - attributes: A keyed list of HTML attributes for the item.
+ *   - text: The visible text used for the item link, such as "‹ previous"
+ *     or "next ›".
+ * - current: The page number of the current page.
+ * - ellipses: If there are more pages than the quantity allows, then an
+ *   ellipsis before or after the listed pages may be present.
+ *   - previous: Present if the currently visible list of pages does not start
+ *     at the first page.
+ *   - next: Present if the visible list of pages ends before the last page.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_pager()
+ */
+#}
+<body>
+    <div class="main-sec inner-page">
+        {# Highlighted #}
+        {# {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock %}
+        {% endif %} #}
+
+        {# Help #}
+        {# {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %} #}
+        <!-- //header -->
+        <header class="py-sm-3 pt-3 pb-2" id="home">
+            <div class="container">
+            {{ page.header }}
+                <div class="nav-top-wthree">
+                {{ page.navigation }}
+                    <!-- //nav -->
+                  <!--
+                   <div class="search-form ml-auto">
+                       <div class="form-w3layouts-grid">
+                           <form action="#" method="post" class="newsletter">
+                               <input class="search" type="search" placeholder="Search here..." required="">
+                               <button class="form-control btn" value=""><span class="fa fa-search"></span></button>
+
+                           </form>
+                       </div>
+                   </div>
+                   <div class="clearfix"></div>
+                 -->
+                </div>
+                <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+            </div>
+        </header>
+        <!-- //header -->
+    </div>
+    <!-- //banner-->
+    <div class=" container layout-content py-5">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+    <!--/banner-bottom -->
+
+
+
+    <!-- /banner-bottom -->
+    <!--/newsletter -->
+    <div class=" container layout-content ">
+      {{ page.subscribe }}
+    </div>{# /.layout-content #}
+
+
+    <section class="newsletter-w3pvt py-2">
+        <div class="container py-md-5">
+            <form method="post" action="#">
+                <p class="text-center">Subscribe to the Handbags Store mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+               <div class="row subscribe-sec">
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email.." name="email" required="">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--//newsletter -->
+
+    <!--/shipping-->
+    <section class="shipping-wthree">
+        <div class="shiopping-grids d-lg-flex">
+            <div class="col-lg-4 shiopping-w3pvt-gd text-center">
+                <div class="icon-gd"><span class="fa fa-truck" aria-hidden="true"></span>
+                </div>
+                <div class="icon-gd-info">
+                    <h3>FREE SHIPPING</h3>
+                    <p>On all order over $2000</p>
+                </div>
+            </div>
+            <div class="col-lg-4 shiopping-w3pvt-gd sec text-center">
+                <div class="icon-gd"><span class="fa fa-bullhorn" aria-hidden="true"></span></div>
+                <div class="icon-gd-info">
+                    <h3>FREE RETURN</h3>
+                    <p>On 1st exchange in 30 days</p>
+                </div>
+            </div>
+            <div class="col-lg-4 shiopping-w3pvt-gd text-center">
+                <div class="icon-gd"> <span class="fa fa-gift" aria-hidden="true"></span></div>
+                <div class="icon-gd-info">
+                    <h3>MEMBER DISCOUNT</h3>
+                    <p>Register &amp; save up to $29%</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--//shipping-->
+
+    <!-- footer -->
+    <div class="footer_agileinfo_topf py-5">
+    {{ page.footer}}
+    </div>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="cpy-right text-center py-3">
+        <p>© 2023 Baggage. tous droits résérvés | Crée par
+            <a href="#">SALAH M'KHARBECH</a>
+        </p>
+    </div>
+    <!-- //copyright -->
+    <div class=" cpy-right text-center py-3">
+      {{ page.highlighted}}
+    </div>
+</body>

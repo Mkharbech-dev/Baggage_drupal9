@@ -1,0 +1,22 @@
+uuid: 39c098bd-11b4-4145-8752-3ef2a713b9c5
+langcode: fr
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - baggage
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: baggage_help
+theme: baggage
+region: highlighted
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  label_display: '0'
+  provider: help
+visibility: {  }

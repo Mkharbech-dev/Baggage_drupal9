@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Implementation de notre hook.
+ */
+
+use Drupal\Core\Access\AccessResult;
+
+
+/**
+ * Implements hook_theme().
+ */
+function podtalk_theme ($existing, $type, $theme, $path) {
+  return [
+    'recettes-liste' => [
+      'variables' => [
+        'items' => [],
+        'title' => '',
+      ]
+    ],
+    'salah' => [
+      'variables' => [
+        'items' => [],
+        'title' => '',
+        'nom' => '',
+      ]
+    ],
+
+    'user-show' => [
+      'variables' => [
+        'data' => [],
+        'title' => '',
+        'salah' => '',
+    ],
+  ],
+  ];
+}
+
+
+
+function podtalk_login($account){
+
+  drupal_set_message(t('salut %name!', ['%name' => $account->getDisplayName()]));
+  $response = new RedirectResponse(\Drupal::url('system.admin_content'));
+  $response->send();
+  return;
+}
+
+
+
