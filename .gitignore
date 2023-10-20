@@ -68,14 +68,8 @@ yarn-error.log
 # Backups.
 backups/*
 
-# Build.
-build
 
-# Docker.
-/.env
-/conf/env/composer.env
-/data
-/docker-compose.override.yml
+
 
 # Drupal paranoia.
 /www
