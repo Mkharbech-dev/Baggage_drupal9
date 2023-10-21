@@ -73,7 +73,8 @@ backups/*
 /.idea
 # Cloned repositories.
 /contrib
-
+# save bd.
+/baggage.sql
 # Cypress.
 /scripts/tests/cypress/cypress/screenshots
 /scripts/tests/cypress/cypress/videos
