@@ -30,27 +30,11 @@ class DbInsertService{
     } catch(Exception $ex){
       \Drupal::logger('podtalk')->error($ex->getMessage());
     }
-      /* try{
-      $conn = Database::getConnection();
-
-      $field = $form_state->getValues();
-
-      $fields["name"] = $field['name'];
-      $fields["mail"] = $field['mail'];
-      $fields["created"] = time();
-
-      $conn->insert('customform')
-        ->fields($fields)->execute();
-      \Drupal::messenger()->addMessage($this->t('Utilisateur à été bien enregistré'));
-
-    } catch(Exception $ex){
-      \Drupal::logger('podtalk')->error($ex->getMessage());
-    }*/
-
   }
 
   /**
-   * get Data function
+   * get Data function from customform (par exemple si on veut récupérer les utilisateurs de notre projet,
+   * on remplace "customform" par " users_field_data"
    */
 
   public function getData(){

@@ -15,7 +15,7 @@
         <th scope="row">{{ item.id }}</th>
         <td>{{ item.name }}</td>
         <td>{{ item.mail }}</td>
-        <td>{{ item.created }}</td>
+        <td>{{ item.created|date(format="d/M/Y") }}</td>
       </tr>
     {% endfor %}
     </tbody>
