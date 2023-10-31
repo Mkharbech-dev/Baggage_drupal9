@@ -1,6 +1,6 @@
-uuid: 64f0fb1f-4545-47f2-83d4-5a00c78ce779
+uuid: d32ee632-49a7-413f-861d-4e2f3e6fde0e
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: baggage_site_branding
 theme: baggage
-region: highlighted
-weight: 1
+region: header
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

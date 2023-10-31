@@ -1,4 +1,4 @@
-uuid: 3a200f7b-6375-47e6-a6fc-427b2bd53b7c
+uuid: 78487068-967f-4733-acf7-7041971acd5c
 langcode: fr
 status: true
 dependencies:
@@ -14,7 +14,7 @@ provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Titre de page'
   label_display: '0'
   provider: core
 visibility: {  }

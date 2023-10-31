@@ -1,4 +1,4 @@
-uuid: 491d08e7-19aa-4928-89b2-047d244d3e91
+uuid: 58bf4a8b-b2bb-4421-bcc3-c1f5e32f9a81
 langcode: fr
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Retours utilisateurs sur le site web'
 recipients:
-  - SALAH_ITA@YAHOO.FR
+  - primo.75013@gmail.com
 reply: ''
 weight: 0
 message: 'Votre message a été envoyé.'

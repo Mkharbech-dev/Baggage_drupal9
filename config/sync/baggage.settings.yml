@@ -1,36 +1,20 @@
+_core:
+  default_config_hash: 1yzHqsgMX09xwrVppDMFRrjEYBxJTlHLnQiwkF3C87Y
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: false
+  node_user_picture: true
+  logo: false
+logo:
+  path: themes/custom/baggage/screenshot.png
+  url: ''
+  use_default: false
 favicon:
-  mimetype: image/jpeg
-  path: 'public://g2_0.jpg'
-  url: /baggage/web/themes/custom/baggage/favicon.ico
-  use_default: 0
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: /baggage/web/themes/contrib/bootstrap/favicon.ico
+  use_default: true
 schemas:
   bootstrap: 8000
   baggage: 8000
-features:
-  comment_user_picture: 1
-  comment_user_verification: 1
-  favicon: 1
-  node_user_picture: 1
-logo:
-  path: 'public://screenshot.png'
-  url: ''
-  use_default: 1
-table_responsive: '-1'
-region_wells:
-  header: ''
-  navigation: ''
-  produit: ''
-  subscribe: ''
-  shipping: ''
-  footer: ''
-  highlighted: ''
-cdn_theme: bootstrap
-cdn_cache_ttl_versions: '604800'
-cdn_cache_ttl_themes: '604800'
-cdn_cache_ttl_assets: '0'
-cdn_cache_ttl_library: '0'
-apply: Appliquer
-reset_http_request_cache: ''
-table: ''
-image_shape: img-circle
-langcode: fr

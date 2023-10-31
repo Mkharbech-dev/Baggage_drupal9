@@ -1,6 +1,6 @@
-uuid: a020f6be-1c61-4fcf-920b-d9724329acec
+uuid: 20ce657b-5101-43fe-b5f7-310f660bbac4
 langcode: fr
-status: false
+status: true
 dependencies:
   theme:
     - baggage
@@ -9,7 +9,7 @@ _core:
 id: baggage_primary_local_tasks
 theme: baggage
 region: highlighted
-weight: -9
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

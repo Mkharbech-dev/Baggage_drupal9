@@ -1,4 +1,4 @@
-uuid: 307aa6db-0254-4bc7-81d7-adacc71abf63
+uuid: 8bb95a63-237d-4160-8720-800512c3379d
 langcode: fr
 status: true
 dependencies:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Identité du site'
   label_display: '0'
   provider: system
   use_site_logo: true

@@ -3,7 +3,7 @@ _core:
 langcode: fr
 first_day: 0
 country:
-  default: FR
+  default: ''
 timezone:
   default: Europe/Paris
   user:

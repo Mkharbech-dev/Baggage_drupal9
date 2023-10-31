@@ -1,6 +1,6 @@
-uuid: 4c488df5-b817-4ebd-8273-8c1be27dce75
+uuid: b0e46534-d979-4503-8985-2fba042b8d71
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: baggage_messages
 theme: baggage
-region: header
-weight: -8
+region: highlighted
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

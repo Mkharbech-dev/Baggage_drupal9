@@ -1,4 +1,4 @@
-uuid: a76035da-7fb2-4e08-8047-bb89c2b513e5
+uuid: ac27e97f-0e92-4409-b0b7-d4afd0444870
 langcode: fr
 status: true
 dependencies:
@@ -29,7 +29,7 @@ tips:
   locale-search:
     id: locale-search
     plugin: text
-    label: Search
+    label: Rechercher
     weight: 3
     selector: '#edit-string'
     body: 'Saisir le mot ou la phrase précise que vous souhaitez traduire, vous pouvez aussi écrire seulement une partie d''un mot.'

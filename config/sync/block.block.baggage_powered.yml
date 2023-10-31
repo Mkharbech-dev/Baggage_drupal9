@@ -1,4 +1,4 @@
-uuid: bc7836fa-8ee8-4cb7-be4c-c9ea8b7b4887
+uuid: 5e61cd67-0e7e-4eae-ba6b-d239c4a1197a
 langcode: fr
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: baggage_powered
 theme: baggage
-region: highlighted
+region: header
 weight: 0
 provider: null
 plugin: system_powered_by_block

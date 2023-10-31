@@ -65,39 +65,32 @@
  *   in different view modes.
  */
 #}
-{{ attach_library('core/drupal.dialog.ajax') }}
-{%
-  set classes = [
-    node.bundle|clean_class,
-    node.isPromoted() ? 'is-promoted',
-    node.isSticky() ? 'is-sticky',
-    not node.isPublished() ? 'is-unpublished',
-    view_mode ? view_mode|clean_class,
-    'clearfix',
-  ]
-%}
-<article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+<div class="col-lg-3 shop-info-grid text-center mt-4">
+  <div class="product-shoe-info shoe">
+    <div class="men-thumb-item">
+      {{ content.field_image_produit }}
+    </div>
+    <div class="item-info-product">
+      <h4>
+        <a href="single.html">{{ content.field_titre }}</a>
+      </h4>
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+      <div class="product_price">
+        <div class="grid-price">
+          <span class="money"><span class="line">{{ content.field_ancien_prix }}</span>{{ content.field_prix }}</span>
+        </div>
       </div>
-    </footer>
-  {% endif %}
-
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
+      <ul class="stars">
+        <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
+        <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
+      </ul>
+      <button type="button" class="btn btn-secondary addToCart mt-3 px-3">Add to cart</button>
+    </div>
   </div>
+</div>
 
-</article>
+

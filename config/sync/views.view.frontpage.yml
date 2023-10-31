@@ -1,86 +1,43 @@
-uuid: d762cafb-7ca5-4ec4-953a-f7bf39fee612
+uuid: e63ecc3a-b373-47a1-b595-35e3665f4442
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
-    - node.type.article
   module:
     - node
     - user
-id: page_d_accueil
+_core:
+  default_config_hash: 6eeliKIydPjqyv5V__QqTfahvJMWkHjOVUUuUIdB1ik
+id: frontpage
 label: 'Page d''accueil'
-module: views
-description: ''
-tag: ''
+module: node
+description: 'Tout le contenu promu en page d''accueil.'
+tag: default
 base_table: node_field_data
 base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: 'Par défaut'
     display_plugin: default
     position: 0
     display_options:
-      title: 'Page d''accueil'
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+      title: ''
+      fields: {  }
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
-          total_pages: null
+          total_pages: 0
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Suivant ›'
+            previous: '‹ Précédent'
+            first: '« Premier'
+            last: 'Dernier »'
           expose:
             items_per_page: false
             items_per_page_label: 'Éléments par page'
@@ -89,6 +46,7 @@ display:
             items_per_page_options_all_label: '- Tout -'
             offset: false
             offset_label: Décalage
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -106,7 +64,41 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          label: ''
+          empty: true
+          content: 'Aucun contenu de page d''accueil n''a été créé pour l''instant. Suivre le <a href="https://www.drupal.org/fr/docs/user_guide/fr/index.html">Guide utilisateur</a> pour démarrer la construction de votre site.'
+          tokenize: false
+        node_listing_empty:
+          id: node_listing_empty
+          table: node
+          field: node_listing_empty
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: node_listing_empty
+          label: ''
+          empty: true
+        title:
+          id: title
+          table: views
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: title
+          label: ''
+          empty: true
+          title: 'Bienvenue !'
       sorts:
         sticky:
           id: sticky
@@ -117,11 +109,11 @@ display:
           admin_label: ''
           entity_type: node
           entity_field: sticky
-          plugin_id: standard
-          order: ASC
+          plugin_id: boolean
+          order: DESC
           expose:
             label: ''
-            field_identifier: ''
+            field_identifier: sticky
           exposed: false
         created:
           id: created
@@ -136,11 +128,51 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: ''
+            field_identifier: created
           exposed: false
           granularity: second
       arguments: {  }
       filters:
+        promote:
+          id: promote
+          table: node_field_data
+          field: promote
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: promote
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         status:
           id: status
           table: node_field_data
@@ -154,19 +186,19 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
+        langcode:
+          id: langcode
           table: node_field_data
-          field: type
+          field: langcode
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: type
-          plugin_id: bundle
+          entity_field: langcode
+          plugin_id: language
           operator: in
           value:
-            article: article
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
           group: 1
           exposed: false
           expose:
@@ -198,6 +230,11 @@ display:
             group_items: {  }
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -217,7 +254,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
@@ -225,25 +261,35 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: Feed
+    display_title: Flux
     display_plugin: feed
     position: 2
     display_options:
       pager:
         type: some
+        options:
+          offset: 0
+          items_per_page: 10
       style:
         type: rss
+        options:
+          grouping: {  }
+          uses_fields: false
+          description: ''
       row:
         type: node_rss
+        options:
+          relationship: none
+          view_mode: rss
       display_extenders: {  }
       path: rss.xml
+      sitename_title: true
       displays:
         page_1: page_1
-        default: '0'
+        default: ''
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
@@ -256,19 +302,9 @@ display:
     display_options:
       display_extenders: {  }
       path: node
-      menu:
-        type: none
-        title: 'Page d''accueil'
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: admin
-        parent: ''
-        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'

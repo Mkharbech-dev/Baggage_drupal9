@@ -1,6 +1,6 @@
-uuid: 943dec87-c1fd-4448-8c7e-2fefd8f84582
+uuid: f5f3e6a6-0a12-4a89-b85c-c578c815b7cf
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: baggage_main_menu
 theme: baggage
-region: highlighted
-weight: -1
+region: header
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

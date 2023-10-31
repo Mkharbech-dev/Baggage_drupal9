@@ -1,6 +1,6 @@
-uuid: c482d20b-bd70-40e1-93ce-516690c6ed9a
+uuid: 2b59330e-d0c0-4f22-aebd-8a31a3d3f541
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
 id: baggage_search_form_wide
 theme: baggage
-region: highlighted
-weight: -7
+region: header
+weight: -5
 provider: null
 plugin: search_form_block
 settings:

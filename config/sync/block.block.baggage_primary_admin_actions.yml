@@ -1,6 +1,6 @@
-uuid: 1f9f4927-dd4e-4fc8-a001-2fb1220b04ac
+uuid: 6ad6c833-9ad8-4045-883d-b77361de865b
 langcode: fr
-status: false
+status: true
 dependencies:
   theme:
     - baggage
@@ -8,8 +8,8 @@ _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
 id: baggage_primary_admin_actions
 theme: baggage
-region: header
-weight: -9
+region: highlighted
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

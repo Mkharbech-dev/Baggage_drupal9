@@ -1,4 +1,4 @@
-uuid: d1420eda-6992-4766-9a97-6cdcdb962631
+uuid: 732bc38c-c4e7-4a6c-879c-28186164cf53
 langcode: fr
 status: true
 dependencies:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Breadcrumbs
+  label: 'Fils d''ariane'
   label_display: '0'
   provider: system
 visibility: {  }

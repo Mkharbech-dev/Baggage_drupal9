@@ -1,9 +1,8 @@
-uuid: 72de5dda-6f99-43c0-9e75-d80e53c02fe3
+uuid: 69f87e6c-d162-4d10-9063-ea1dc2b1527e
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
-    - node
     - system
   theme:
     - baggage
@@ -11,8 +10,8 @@ _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
 id: baggage_content
 theme: baggage
-region: highlighted
-weight: 4
+region: content
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
@@ -20,11 +19,4 @@ settings:
   label: 'Contenu de la page principale'
   label_display: '0'
   provider: system
-visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      prduit: prduit
+visibility: {  }
