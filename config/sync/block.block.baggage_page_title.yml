@@ -1,6 +1,6 @@
 uuid: 89732682-1128-4a52-83e7-a2242ea72509
 langcode: fr
-status: true
+status: false
 dependencies:
   theme:
     - baggage

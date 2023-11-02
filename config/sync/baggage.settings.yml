@@ -18,3 +18,4 @@ favicon:
 schemas:
   bootstrap: 8000
   baggage: 8000
+langcode: fr

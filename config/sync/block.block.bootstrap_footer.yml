@@ -1,5 +1,5 @@
 uuid: cabbdd2f-621e-4637-b88c-9d6bd33af836
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: 'Menu Pied de page'
   label_display: '0'
   provider: system
   level: 1

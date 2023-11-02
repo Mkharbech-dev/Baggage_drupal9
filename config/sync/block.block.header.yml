@@ -1,0 +1,25 @@
+uuid: 54f9c324-de8a-482a-8fbc-b043f3268b2a
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:header:c08b138f-ee02-4773-9925-db71d348f071'
+  module:
+    - block_content
+  theme:
+    - baggage
+id: header
+theme: baggage
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:c08b138f-ee02-4773-9925-db71d348f071'
+settings:
+  id: 'block_content:c08b138f-ee02-4773-9925-db71d348f071'
+  label: 'header section'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

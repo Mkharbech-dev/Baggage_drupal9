@@ -1,0 +1,23 @@
+uuid: fca02bab-bd19-4029-a413-542a91c59f03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prix
+    - node.type.produit
+id: node.produit.field_prix
+field_name: field_prix
+entity_type: node
+bundle: produit
+label: prix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

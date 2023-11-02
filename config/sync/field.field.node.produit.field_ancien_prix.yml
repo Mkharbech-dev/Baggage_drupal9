@@ -1,0 +1,23 @@
+uuid: 3166dfd9-956e-4563-81d0-d783328ab07e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ancien_prix
+    - node.type.produit
+id: node.produit.field_ancien_prix
+field_name: field_ancien_prix
+entity_type: node
+bundle: produit
+label: 'ancien prix'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

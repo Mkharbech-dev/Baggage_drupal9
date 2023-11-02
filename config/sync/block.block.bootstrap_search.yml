@@ -1,5 +1,5 @@
 uuid: cab1b0b2-2f21-46ab-931b-b2fcae739425
-langcode: en
+langcode: fr
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: Rechercher
   label_display: visible
   provider: search
   page_id: ''

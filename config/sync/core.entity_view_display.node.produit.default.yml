@@ -1,0 +1,62 @@
+uuid: e1d8b1a4-9e68-4a01-8ccf-30126de52e87
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.produit.field_ancien_prix
+    - field.field.node.produit.field_image_produit
+    - field.field.node.produit.field_prix
+    - field.field.node.produit.field_titre
+    - node.type.produit
+  module:
+    - image
+    - user
+id: node.produit.default
+targetEntityType: node
+bundle: produit
+mode: default
+content:
+  field_ancien_prix:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_produit:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_prix:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_titre:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
