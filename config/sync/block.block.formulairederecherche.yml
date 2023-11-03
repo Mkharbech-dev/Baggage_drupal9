@@ -1,0 +1,21 @@
+uuid: d0c4ef88-a166-477e-9cab-be62a7b428e5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - baggage
+id: formulairederecherche
+theme: baggage
+region: navigation
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
