@@ -11,7 +11,7 @@ dependencies:
 id: header
 theme: baggage
 region: header
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:c08b138f-ee02-4773-9925-db71d348f071'
 settings:

@@ -19,13 +19,20 @@ body a {
 }
 .contextual-region {
   position: inherit;
+
 }
+#block-menuducomptedelutilisateur{
+  margin-left: auto;
+}
+/*
 .contextual-region nav {
   margin: 0;
   padding: 0;
   margin-top: 5px;
   float: left;
 }
+*/
+
 a:hover {
     text-decoration: none;
 }
@@ -111,6 +118,8 @@ header a.btn {
     letter-spacing: 1px;
     border: none;
     outline: none;
+    text-transform: capitalize !important;
+    margin: auto;
 }
 
 header a.btn span {

@@ -11,7 +11,7 @@ _core:
 id: baggage_search_form_wide
 theme: baggage
 region: header
-weight: -5
+weight: -8
 provider: null
 plugin: search_form_block
 settings:

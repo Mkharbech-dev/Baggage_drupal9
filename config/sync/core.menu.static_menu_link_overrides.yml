@@ -9,14 +9,26 @@ definitions:
     expanded: false
     enabled: true
   standard__front_page:
-    weight: -50
     menu_name: main
     parent: ''
+    weight: -50
     expanded: false
     enabled: true
   node__add_page:
     menu_name: admin
     parent: system.admin_content
     weight: 0
+    expanded: false
+    enabled: true
+  user__page:
+    weight: -50
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  user__logout:
+    weight: -49
+    menu_name: account
+    parent: ''
     expanded: false
     enabled: true

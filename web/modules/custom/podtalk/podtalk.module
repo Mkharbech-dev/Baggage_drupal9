@@ -5,7 +5,7 @@
  * Implementation de notre hook.
  */
 
-use Drupal\Core\Access\AccessResult;
+
 
 
 /**
@@ -39,13 +39,7 @@ function podtalk_theme ($existing, $type, $theme, $path) {
 
 
 
-function podtalk_login($account){
 
-  drupal_set_message(t('salut %name!', ['%name' => $account->getDisplayName()]));
-  $response = new RedirectResponse(\Drupal::url('system.admin_content'));
-  $response->send();
-  return;
-}
 
 
 

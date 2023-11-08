@@ -1,0 +1,8 @@
+uuid: ad8a086d-8599-4825-83b1-a1c7b580f637
+langcode: fr
+status: true
+dependencies: {  }
+id: menu-haut-de-page
+label: 'Menu haut de page'
+description: ''
+locked: false

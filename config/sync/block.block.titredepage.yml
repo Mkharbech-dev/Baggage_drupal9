@@ -1,15 +1,13 @@
-uuid: 89732682-1128-4a52-83e7-a2242ea72509
+uuid: 24168a56-c3f4-4a37-97fa-b51f3da38843
 langcode: fr
-status: false
+status: true
 dependencies:
   theme:
     - baggage
-_core:
-  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: baggage_page_title
+id: titredepage
 theme: baggage
-region: header
-weight: -7
+region: content
+weight: -9
 provider: null
 plugin: page_title_block
 settings:
