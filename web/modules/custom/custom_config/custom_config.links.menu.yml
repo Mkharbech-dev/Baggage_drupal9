@@ -1,0 +1,6 @@
+custom_config.settings_form:
+  title: 'custom_config'
+  description: 'Configure custom_config.'
+  parent: system.admin_config_system
+  route_name: custom_config.settings_form
+  weight: 10
