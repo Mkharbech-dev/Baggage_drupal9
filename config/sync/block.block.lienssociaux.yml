@@ -1,0 +1,20 @@
+uuid: 2837e6c2-9032-4cec-b86d-e52f96489e16
+langcode: fr
+status: true
+dependencies:
+  module:
+    - custom_config
+  theme:
+    - baggage
+id: lienssociaux
+theme: baggage
+region: footer
+weight: 0
+provider: null
+plugin: custom_config_social_links
+settings:
+  id: custom_config_social_links
+  label: 'Liens sociaux'
+  label_display: '0'
+  provider: custom_config
+visibility: {  }

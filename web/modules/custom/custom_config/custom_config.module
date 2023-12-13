@@ -1,0 +1,17 @@
+<?php
+//Définir une template à partir du bloc 'liens sociaux'
+/**
+ * Implements hook_theme().
+ */
+function custom_config_theme() {
+  return [
+    'social_links' => [
+      'variables' => [
+        'facebook' => null,
+        'twitter' => null,
+        'linkedin' => null,
+      ],
+      'template' => 'social-links',
+    ],
+  ];
+}

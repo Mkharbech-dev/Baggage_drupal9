@@ -17,6 +17,32 @@ body a {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+
+
+.btn-floating {
+  --mdb-btn-width: 2.3125rem;
+  --mdb-btn-height: 2.3125rem;
+  --mdb-btn-icon-width: 2.3125rem;
+  --mdb-btn-icon-line-height: 2.3125rem;
+  --mdb-btn-width-lg: 2.8125rem;
+  --mdb-btn-height-lg: 2.8125rem;
+  --mdb-btn-icon-width-lg: 2.8125rem;
+  --mdb-btn-icon-line-height-lg: 2.8125rem;
+  --mdb-btn-width-sm: 1.8125rem;
+  --mdb-btn-height-sm: 1.8125rem;
+  --mdb-btn-icon-width-sm: 1.8125rem;
+  --mdb-btn-icon-line-height-sm: 1.8125rem;
+  width: var(--mdb-btn-width);
+  height: var(--mdb-btn-height);
+  --mdb-btn-border-radius: 50%;
+  border-radius: var(--mdb-btn-border-radius);
+  padding: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contextual-region {
   position: inherit;
 
