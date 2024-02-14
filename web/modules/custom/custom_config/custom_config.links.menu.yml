@@ -1,6 +1,6 @@
 custom_config.settings_form:
   title: 'custom_config'
-  description: 'Configure custom_config.'
+  description: 'Configurer les liens sociaux.'
   parent: system.admin_config_system
   route_name: custom_config.settings_form
   weight: 10

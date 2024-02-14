@@ -19,7 +19,7 @@ class SocialLinksBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $config = \Drupal::config('custom_config.settings');
+    $config = \Drupal::config('Social');
 
     // Récupérer l'url de facebook
     $facebook = $config->get('facebook');

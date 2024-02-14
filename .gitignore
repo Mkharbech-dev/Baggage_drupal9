@@ -3,10 +3,12 @@
 # See docs/01-developer/12-git.md or see https://www.drupal.org/node/1542048.
 
 # Package management systems.
-bower_components
-node_modules
-vendor
-yarn-error.log
+
+/vendor/
+/data/
+/.env
+/.env.local.php
+/docker-compose.yml
 
 # Contrib files.
 /web/core
@@ -80,4 +82,7 @@ backups/*
 /scripts/tests/cypress/cypress/videos
 
 /sync/.htaccess
-/
+
+/docker/conf/
+/docker/Dockerfile
+/docker/entrypoint.sh
